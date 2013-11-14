@@ -1,4 +1,9 @@
 <?php
+/////////////////////////////////
+/////////////////////////////////
+//!\\ Ce fichier doit obligatoirement se trouver à l'emplacement suivant : url_site/engine/conf.php
+/////////////////////////////////
+/////////////////////////////////
 
 // Serveur MySQL
 $_SESSION['server_sql'] = 'localhost';
@@ -23,9 +28,11 @@ $_SESSION['folder_documentations'] = $_SESSION['folder_files']."docs/";
 //// "Fichiers Moteurs"
 $_SESSION['folder_engine'] = "engine/";
 // Création de RSS
-$_SESSION['folder_rss_write'] = $_SESSION['folder_engine']."rss_write/";
+$_SESSION['folder_phpmyrss'] = $_SESSION['folder_engine']."phpmyrss/";
 // Création de fichiers Excel
 $_SESSION['folder_write_excel'] = $_SESSION['folder_engine']."writeexcel/";
+// Chemin vers le viewer
+$_SESSION['viewer_evmt'] = substr_replace( "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'], 'viewer.php?id=', strpos( "http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'], 'engine/conf.php' ) );
 
 
 ////// Divers

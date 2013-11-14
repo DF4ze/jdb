@@ -465,7 +465,7 @@ session_start();
 				//echo '<th>'.$data['nom'].'</th>';
 				
 				echo 		'<th>';
-				if( $_POST['asc'] == $data['correspondance'] )
+				if( @$_POST['asc'] == $data['correspondance'] )
 					echo '<a href="javascript:repost_asc(\''.$data['correspondance'].'\');">';
 				else
 					echo '<a href="javascript:repost_desc(\''.$data['correspondance'].'\');">';

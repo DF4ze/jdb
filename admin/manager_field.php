@@ -413,6 +413,7 @@
 	echo '</div >';
 	echo '</div >';
 
+	if( isset( $_SESSION['message'] ) )
 	if( $_SESSION['message'] != '' ){
 		echo '<div class="message" id="message">';
 		echo '<div class="message_titre">';
