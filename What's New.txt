@@ -1,0 +1,81 @@
+15:21 16/11/2012
+- Upload des sources sur SourceForge!!
+
+11:18 12/07/2012
+- Début d'implémentation de l'upload de fichier.
+
+
+07:59 27/06/2012 v1.11.7
+- Alerting (presque) terminé
+	- Base "jdb_evenements" implémenter pour prendre en compte l'alerting
+	- Affichage dans le viewer des alarmes avec un code couleur en fonction de la phase de l'alarme.
+	- Affichage d'un résumé sur la page d'accueil.
+	- Reste ?? :
+		- à pouvoir faire popup les alarmes ??
+		- un ptit plugin permettant de faire défiler sur un bandeau le résumé des alarmes??
+
+15:27 22/06/2012
+- Alerting toujours pas fini, il faut mettre en place l'affichage lors du listing. et réfléchir au meilleur moyen de faire remonter l'information
+
+09:34 21/06/2012
+- Début d'implémentation de l'alerting.
+
+
+15:15 18/06/2012 v1.10.7
+- Correction d'un bug inversait la date lorsqu'il y avait une erreur de champ non rempli.
+
+
+17:40 15/06/2012
+- Ajout d'une icone pour les pages. (entete des fenetres)
+- ajout d'icones pour TRUE et FALSE dans la partie admin : manager_field.php et manager_user.php
+
+
+17.41 14/06/2012 v1.10.6
+- Modification de l'affiche des tableaux : Un ligne sur 2 en gris.
+- Modification des icones "Modifier", "Supprimer" et "Détail".
+
+
+15:45 07/06/2012 v1.10.6
+- dans la gestion des champs suplémentaires : le champs spécifique au MENU DEROULANT ne s'affiche que lorsque ce dernier est selectionné.
+- Ajout d'un lien vers la FAQ
+- gestion des obligations de saisie(ou non) pour les champs suplémentaires.
+- remodelage du script de detection des activités sélectionnées dans "insert.php"
+
+
+14:31 05/06/2012 v1.7.6
+- Gestion détaillées des champs suplémentaires.
+	Possibilité de selectionner un champs au fomat Text, TextArea ou Menu Déroulant.
+- Zone de recherche (qui recherche dans tout les champs) sert donc a la recherche de numéro de cas ou de mot clé.
+
+
+03:05 02/06/2012 v1.5.6
+- Modification de l'affichage du viewer :
+	- Ajout colonne pour modifier ses entrées uniquement pour les non-admin, toute les entrées pour les admins.
+	- Implementation de la modification des entrées.
+	- ajout dune colonne pour laffichage détaillé. => bug lors quon GET[ID] ... on na pas le detail.
+- Correction du bug lorsquon GET[ID] ... on na pas le detail.
+- Plus de perte de données lorsquon oublie de selectionner un EVENEMENT ou une COMMUNICATION sur la page INSERT.PHP
+
+(J'ai oublié de copier le dossier de la v1.4.5 ... la v1.5.6 l'a écrasé... :( )
+
+
+02:33 01/06/2012 v1.4.5
+- Ajout d'une colonne "client"
+- Ajout d'un filtrage sur la nouvelle colonne "client"
+- Correction du bug qui affichait tt le temps que l'insertion d'un item s'était bien passée meme quand il y avait une erreur...
+- Ajout dun fichier de conf pour la connexion BDD
+- Ajout dune page : myaccount : 
+	- Possibilité de se déloguer.
+	- Possibilité de changer de mot de passe.
+
+14:53 09/05/2012 v1.3.4
+- Fin d'implémentation de l'export Excel.
+- Mise en place du BackGround sur toute les pages
+- fenetre popup pour information sur les évènements : Supprimer, modifier, creer.
+- Correction d'un bug : coder les caractères spéciaux dans les Champs Options complémentaires des activités.
+	L'insertion d'une cote ' ou double cote " faisait planter la requete.
+
+16:08 07/05/2012
+- Correction des accents dans la base.
+- Implémentation de la selection auto de la semaine précédente.
+- Début d'implémentation de l'export Excel.

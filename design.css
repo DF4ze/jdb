@@ -1,0 +1,537 @@
+body
+{
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+	background: url("files/images/hdrNameBg.gif");
+	background-repeat : repeat-x;
+	
+	margin : 0px;
+}
+
+
+/***** COMPOSANTS ******/
+
+/* TABLEAU */
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: none;/* 1px solid black; */
+	padding : 5px;
+}
+th
+{
+ 	background: url("files/images/level2TabBg.gif");
+	color : #FFFFFF;
+	
+	border: 1px solid white;/* none; *//* 1px solid black; */
+	padding : 5px;
+}
+th a:hover {
+    text-decoration: underline;
+}
+th a {
+    color: #FFFFFF;
+	text-decoration: none;
+}
+
+/* IMAGES */
+
+a img
+{
+	border: none;
+} 
+
+/* COULEUR */
+.red
+{
+	color : #D00B0C;
+}
+
+/* INPUT submit */
+.create {
+    background-color: #0000CD;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+/* INPUT text */
+.input_date{
+	width : 80px;
+}
+.input_heure{
+	width : 40px;
+}
+
+
+
+
+/****** DIVZ ******/
+/* Background */
+.corps_background
+{
+	background-attachment: fixed;
+    background-image: url("files/images/background.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+	
+	min-height : 530px;
+	/* height : auto;  */
+}
+.div_login
+{
+	background-color : #365883;
+	border-radius: 10px 10px 10px 10px;
+	
+	box-shadow: 4px 4px 4px grey;
+
+	
+	width : 150px;
+	
+	padding : 10px;
+	padding-bottom : 20px;
+	
+	margin : auto;
+	margin-top : 100px;
+	
+	color : #FFFFFF;
+}
+
+
+
+/* PIED DE PAGE */
+.pied {
+ 	background: url("files/images/hdrNameBg.gif");
+	background-color: #FFFFFF;
+    bottom: 0;
+    padding: 10px;
+    /* position: absolute; */
+    /* width: 75%; */
+	
+	color: grey;
+}
+.pied a:hover {
+    text-decoration: none;
+}
+.pied a {
+    color: grey;
+	text-decoration: underline;
+}
+
+/* ENTETE PRINCIPAL*/
+.entete_principal
+{
+	/* border : solid black 1px; */
+	margin-bottom : 5px;
+}
+.entete_centre
+{
+	height : 20px;
+	
+	padding-top : 5px;
+}
+.entete_gauche
+{
+	width : 100px;
+	height : 25px;
+	
+	float : left;
+	background: url("files/images/logo3.png");
+	background-repeat : no-repeat;
+}
+.entete_droite
+{
+	height : 20px;
+	
+	text-align : right;
+	padding-right : 5px;
+	
+	float : right;
+	
+	padding-top : 5px;
+}
+.entete_droite a:hover {
+    text-decoration: none;
+}
+.entete_droite a {
+    color: black;
+	text-decoration: underline;
+}
+
+/* ENTETE MENU */
+.entete_menu
+{
+	/* border : solid black 1px; */
+	height : 26px;
+}
+
+.entete_menu_vide
+{
+	/* border : solid black 1px; */
+	float : left;
+	height : 26px;
+	width : 50px;
+	
+	background: url("files/images/white_degrad.png");
+	background-repeat : no-repeat;
+}
+.entete_menu_vide_extends
+{
+	/* border : solid black 1px; */
+	/* float : left; */
+	height : 26px;
+	
+	background: url("files/images/white_degrad.png");
+	background-repeat : repeat-x;
+}
+
+.entete_menu_unselected
+{
+	/* border : solid black 1px; */
+	float : left;
+	height : 20px;
+	
+ 	padding-left : 5px;
+	padding-right : 5px;
+	padding-top : 5px;
+/*	padding-bottom : 0px;
+ */
+	background: url("files/images/tabUnSelectedBg.gif");
+	background-repeat : no-repeat;
+	
+	color : #386DFF;
+	
+	border : 1px solid grey;
+	border-bottom : none;
+}
+
+.entete_menu_selected
+{
+	/* border : solid black 1px; */
+	float : left;
+	height : 20px;
+
+ 	padding-left : 5px;
+	padding-right : 5px;
+	padding-top : 5px;
+/*	padding-bottom : 0px;
+ */
+	background: url("files/images/tabSelectedBg.gif");
+	background-repeat : no-repeat;
+	
+	color : white;
+	font-weight: bolder;
+	
+	border-top : 1px solid grey;
+}
+
+.entete_menu_unselected a:hover {
+    text-decoration: underline;
+}
+.entete_menu_unselected a {
+    color: #000099;
+	 text-decoration: none;
+}
+
+.entete_menu_selected a:hover {
+    text-decoration: underline;
+}
+.entete_menu_selected a {
+    color: #FFFFFF;
+	 text-decoration: none;
+}
+
+
+
+/* ENTETE SOUS MENU */
+.entete_sous_menu
+{
+	height : 25px;
+	background: url("files/images/level2TabBg.gif");
+	background-repeat : repeat-x;
+	
+	color : white;
+	
+	margin : 0px;
+	padding : 0px;
+	
+	border-bottom : 1px solid black;
+}
+
+.entete_sous_menu_unselected
+{
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 0px;	
+
+	height : 20px;
+
+	float : left;
+}
+
+.entete_sous_menu_selected
+{
+	padding-left : 10px;
+	padding-right : 10px;
+	padding-top : 5px;
+	padding-bottom : 0px;	
+
+	height : 20px;
+	float : left;
+	
+	font-weight: bolder;
+}
+
+.entete_sous_menu_unselected a:hover {
+    text-decoration: underline;
+}
+.entete_sous_menu_unselected a {
+    color: #FFFFFF;
+	text-decoration: none;
+}
+
+.entete_sous_menu_selected a:hover {
+    text-decoration: underline;
+}
+.entete_sous_menu_selected a {
+    color: #FFFFFF;
+	 text-decoration: none;
+}
+
+/* TITRE */
+.titre_general
+{
+	height : 50px;
+	
+	/* margin : 5px; */
+	
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.titre
+{
+	/* width: 350px; */
+	margin-top : 5px;
+	margin-left : 5px;
+	float : left;
+}
+.titre_centre
+{
+	/* width: 350px; */
+
+	text-align : center;
+}
+
+
+/* MENU OPTIONS */
+.petit_menu
+{
+	float:left;
+	margin-right: 10px; 
+	margin-bottom : 10px; 
+	
+	background-color : #FFFFFF !important;
+}
+.menu_options_general
+{
+	margin : 10px;
+	
+	border : 1px solid grey;
+	border-top : none;
+	
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 4px 4px black;
+}
+
+.menu_options_titre
+{
+	height : 20px;
+	padding-top : 5px;
+	padding-left : 5px;
+	
+	background: url("files/images/mailSubHeaderBg2.gif");
+	background-repeat : repeat-x;
+	
+	font-weight: bolder;
+	
+	border-radius: 10px 10px 0px 0px;
+}
+
+.menu_options_corps
+{
+	padding : 10px;
+	background-color : #FFFFFF;
+	opacity:0.8;
+	/*-ms-filter: "alpha(opacity=80)";  /* IE 8 */
+    /*filter : alpha(opacity=80);  /*IE < 8 */ 
+   
+}
+
+
+/* CORPS */
+
+.corps_general
+{
+	margin : 10px;
+	
+	border : 1px solid grey;
+	border-top : none;	
+
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 4px 4px black;
+}
+
+.corps_titre
+{
+	height : 20px;
+	padding-top : 5px;
+	padding-left : 5px;
+	
+	background: url("files/images/mailSubHeaderBg2.gif");
+	background-repeat : repeat-x;	
+	
+	font-weight: bolder;
+	
+	border-radius: 10px 10px 0px 0px;
+}
+
+.corps_corps
+{
+	padding : 10px;
+	
+	background-color : #FFFFFF;
+	opacity:0.8;
+	-ms-filter: "alpha(opacity=80)"; /* IE 8 */
+    filter : alpha(opacity=80); /* IE < 8 */
+
+}
+
+.corps_general_accueil
+{
+	margin : 10px;
+	
+	border : 1px solid grey;
+	border-top : none;	
+
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 4px 4px black;
+	
+	width : 600px;
+	float : left;
+}
+
+/* PETITS DIVS */
+.bidon
+{
+	/*height:30px;*/
+	opacity:1;
+	/* background-color:white; */
+	padding-top:5px;
+}
+
+.alerting
+{
+	/* background-image : url("files/images/layerPopupBg.gif"); */
+	background-color : #E7EDF7;
+	border : 2px solid #A5B5EE;
+	width : 200px;		
+	padding : 5px;
+	
+	/* float : left; */
+}
+
+.upload
+{
+	background-color : #E7EDF7;
+	border : 2px solid #A5B5EE;
+	padding : 5px;
+	width : 500px;		
+}
+
+/* MESSAGE */
+.message
+{
+	position: absolute;
+	left : 300px;
+	top : 300px;
+	width : 400px;
+	
+	margin : 10px;
+	
+	border : 1px solid grey;
+	border-top : none;	
+
+	border-radius: 10px 10px 0px 0px;
+	box-shadow: 4px 4px 4px black;
+
+	background-color : #FFFFFF;
+
+	/*height : 100px;*/
+	
+/* 	text-align: center;
+	background-color: white;
+	border : 1px solid black; */
+}
+
+.message_titre
+{
+	height : 20px;
+	padding-top : 5px;
+	padding-left : 5px;
+	
+	background: url("files/images/mailSubHeaderBg2.gif");
+	background-repeat : repeat-x;	
+	
+	font-weight: bolder;
+	
+	border-radius: 10px 10px 0px 0px;
+}
+
+.message_corps
+{
+	text-align: center;
+	padding : 10px;
+}
+.message_titre a:hover {
+    text-decoration: underline;
+}
+.message_titre a {
+    color: #000000;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+/* COPIER  */
+
+/* Pour les bandeau_menu */
+.dvInnerHeader { 
+    background-color: #AFDBFF;
+    border-bottom: 2px solid #4F94CD;
+    padding: 5px;
+}
+
+
+
+
+/* lien déconnexion */
+a:hover {
+    text-decoration: underline;
+}
+
+/* lien titre */
+a:hover {
+    text-decoration: underline;
+}
+/* =( */
+
+/* BODY */
